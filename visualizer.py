@@ -2,7 +2,7 @@
 visualizer.py — CrystalRover MDP Policy & Value Visualiser (for Q2c report)
 COMP3702 Assignment 2, Semester 2 2026
 
-Produces four groups of figures (all saved to ./screenshots/ subfolder):
+Produces four groups of figures (all saved in the SAME folder as visualizer.py, i.e. the repo root):
   A) Per-level Value-function heatmap (VI-converged V(s) coloured by tile,
      aggregated over crystal-subset at each (row,col) using max |V|)
   B) Per-level Policy-arrow overlay on the same heatmap canvas
@@ -32,8 +32,7 @@ from solution import Solver
 # I/O helpers
 # =============================================================================
 
-OUT_DIR = Path(__file__).parent / "screenshots"
-OUT_DIR.mkdir(exist_ok=True)
+OUT_DIR = Path(__file__).parent  # save alongside solution.py (repo root)
 
 
 def _save(fig, name: str) -> str:
