@@ -1,0 +1,50 @@
+# the long haul
+# num rows, num cols
+13, 14
+# rocket jumps
+infinite!
+# min samples
+1
+# storm direction
+RIGHT
+# storm directional cost
+0.5
+# gamma, epsilon
+0.999, 0.0001
+# VI time targets (min score target, max score target)
+0.659494, 0.329747
+# PI time targets (min score target, max score target)
+0.0132, 0.0066
+# VI iterations targets (min score target, max score target)
+362, 181
+# PI iterations targets (min score target, max score target)
+12, 6
+# reward target
+-169.5, -67.2
+# random drift probability
+0.2
+# random double probability
+0.4
+# boost probabilities
+# 0, 1, 2, 3, 4
+0.1, 0.3, 0.3, 0.2, 0.1
+# collision penalty
+1.0
+# game over penalty
+500.0
+# episode seed
+1917
+# grid data
+RRRRRRRRRRRRRR
+RPRRLRLRLRLRER 
+R         C  R
+R*RLRLRLRLRR*R
+R*RRRRRRRRRR*R
+R*RRRLRRRLRR*R
+R         C  R
+R*RLRRRLRRRR*R
+R*RRRRRRRRRR*R
+R*RRRRRRLRRR*R
+R         C  R
+R RRRLRRRRRR R
+RRRRRRRRRRRRRR

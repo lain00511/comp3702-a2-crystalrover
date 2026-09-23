@@ -1,0 +1,43 @@
+# two shortcuts
+# num rows, num cols
+6, 12
+# rocket jumps
+infinite!
+# min samples
+3
+# storm direction
+LEFT
+# storm directional cost
+0.5
+# gamma, epsilon
+0.999, 0.0001
+# VI time targets (min score target, max score target)
+0.383636, 0.191818
+# PI time targets (min score target, max score target)
+0.00451, 0.002255
+# VI iterations targets (min score target, max score target)
+204, 102
+# PI iterations targets (min score target, max score target)
+18, 9
+# reward target
+-176, -70.4
+# random drift probability
+0.3
+# random double probability
+0.3
+# boost probabilities
+# 0, 1, 2, 3, 4
+0.1, 0.3, 0.3, 0.2, 0.1
+# collision penalty
+1.0
+# game over penalty
+500.0
+# episode seed
+1917
+# grid data
+RRRRRRRRRRRR
+R   P  E   R
+R*LLRRR**RRR
+R   R*C   LR
+RC*C      LR
+RRRRRRRRRRRR
