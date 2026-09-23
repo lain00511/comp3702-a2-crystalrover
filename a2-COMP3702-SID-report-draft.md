@@ -238,10 +238,15 @@ player step, so the planner must tolerate a ×2 increase in the probability of a
 *off-axis two-step excursion* into rocks / craters / lava. This is the reason L2's optimal
 policy stays conservative and avoids the corridor that is optimal in L1 (observed visually
 in `Q2c_levelL2_policy_arrows.png`, below). The exact analytical quadrant bars are rendered
-by `visualizer.py / plot_q2a_venn_like()` and saved as:
-  • screenshots/Q2a_venn_quadrants_L1-default.png
-  • screenshots/Q2a_venn_quadrants_L2-default.png
+by `visualizer.py / plot_q2a_venn_like()` and saved at repo root:
+  • `./Q2a_venn_quadrants_L1-default.png`
+  • `./Q2a_venn_quadrants_L2-default.png`
 (embeddable as Figure 2a in the PDF).
+
+**Figure 2a — Drift × Double-move joint probability quadrant decomposition (L1 left, L2 right).**
+
+![Fig 2a L1 venn quadrants](./Q2a_venn_quadrants_L1-default.png){width=48%}
+![Fig 2a L2 venn quadrants](./Q2a_venn_quadrants_L2-default.png){width=48%}
 
 ---
 
@@ -283,6 +288,10 @@ The analytical bars (single BOOST 5-bin histogram + double BOOST 9-bin histogram
 side) are rendered in `Q2b_boost_convolution_L1..L2-default.png`, alongside
 printed E[d] values, which is the artefact submitted for the rubric "correct probability
 matrix" criterion.
+
+**Figure 2b — BOOST distance distribution: single leg 5-point vs double-move 9-point convolution.**
+
+![Fig 2b BOOST convolution](./Q2b_boost_convolution_L1..L2-default.png){width=90%}
 
 ---
 
@@ -347,6 +356,26 @@ figures to embed in the final submission PDF:
 Additionally, the analytical figures from the rubric's earlier sub-questions are:
   • Fig 2a — `./Q2a_venn_quadrants_L1-default.png` (quadrant decomposition L1)
   • Fig 2b — `./Q2b_boost_convolution_L1..L2-default.png` (single vs double BOOST convolution)
+
+**Figure 2c.1 — L1 Value heatmap (left = signed V(s); right = |V(s)| hazard proxy) & Policy arrows.**
+
+![Fig 2c.1 L1 value heatmap](./Q2c_levelL1_value_heatmap.png){width=90%}
+![Fig 2c.1 L1 policy arrows](./Q2c_levelL1_policy_arrows.png){width=90%}
+
+**Figure 2c.2 — L2 Value heatmap & Policy arrows.**
+
+![Fig 2c.2 L2 value heatmap](./Q2c_levelL2_value_heatmap.png){width=90%}
+![Fig 2c.2 L2 policy arrows](./Q2c_levelL2_policy_arrows.png){width=90%}
+
+**Figure 2c.3 — L3 Value heatmap & Policy arrows.**
+
+![Fig 2c.3 L3 value heatmap](./Q2c_levelL3_value_heatmap.png){width=90%}
+![Fig 2c.3 L3 policy arrows](./Q2c_levelL3_policy_arrows.png){width=90%}
+
+**Figure 2c.4 — L4 Value heatmap & Policy arrows (largest map, lava hazards).**
+
+![Fig 2c.4 L4 value heatmap](./Q2c_levelL4_value_heatmap.png){width=90%}
+![Fig 2c.4 L4 policy arrows](./Q2c_levelL4_policy_arrows.png){width=90%}
 
 #### 2c (iii) AI-use declaration for the visualiser module
 
@@ -580,6 +609,14 @@ $n_{\text{episodes}}=100$.
 Colour heatmaps (saved and committed in repo root):
   • `./Q4_heatmap_VI.png`
   • `./Q4_heatmap_PI.png`
+
+**Figure 4b.1 — VI policy heatmaps: average reward per episode (left) & success rate % (right).**
+
+![Fig 4b.1 VI heatmaps](./Q4_heatmap_VI.png){width=95%}
+
+**Figure 4b.2 — PI policy heatmaps (identical to 2 d.p. — confirms unique V*).**
+
+![Fig 4b.2 PI heatmaps](./Q4_heatmap_PI.png){width=95%}
 
 The experiment is reproducible by running:
 ```

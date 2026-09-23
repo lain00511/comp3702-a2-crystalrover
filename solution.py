@@ -416,6 +416,19 @@ class Solver:
             if self.pi_is_converged():
                 break
 
+    def pi_get_policy_value(self, state: GameState):
+        """
+        Retrieve V(s) for the given state under the current policy (computed by Policy Iteration).
+        查询给定状态在当前策略下的值V(s)。如果状态不在可达列表中，返回0。
+        :param state: the current state / 当前状态
+        :return: V(s) / 该状态的策略值
+        """
+        if state in self.state_to_idx:
+            s_idx = self.state_to_idx[state]
+            return float(self.pi_v[s_idx])
+        else:
+            return 0.0
+
     def pi_select_action(self, state: GameState):
         """
         Retrieve the optimal action for the given state (based on values computed by Policy Iteration).
