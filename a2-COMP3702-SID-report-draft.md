@@ -1,6 +1,8 @@
 # COMP3702 — Assignment 2: CrystalRover MDP — Report Draft
 
-> **Student Name:** [REPLACE BEFORE SUBMISSION]  |  **Student ID:** [REPLACE BEFORE SUBMISSION]  |  **GitHub Username:** [REPLACE BEFORE SUBMISSION]
+> **Student Name:** Tianyi Qu  |  **Student ID:** 50494408  |  **GitHub Username:** lain00511
+> **Coursework Repository (where 5+ commits live):** https://github.com/comp3702-2026/comp3702-2026-a2-50494408
+> **Personal mirror backup:** https://github.com/lain00511/comp3702-a2-crystalrover
 >
 > Course: COMP3702 Artificial Intelligence, Semester 2 2026 — The University of Queensland
 > Word count limit (body excluding References & Appendix): as per template

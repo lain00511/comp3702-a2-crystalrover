@@ -22,9 +22,9 @@ Last updated by vp 09/09/2026
 
 class Solver:
 
-    STUDENT_NAME = "Crystal Rover"  # TODO: replace with your name / 替换为你的姓名
-    STUDENT_ID = "12345678"         # TODO: replace with your student ID / 替换为你的学号
-    GITHUB_USERNAME = "cool-comp3702-student"  # TODO: replace with your GitHub username / 替换为GitHub用户名
+    STUDENT_NAME = "Tianyi Qu"  # TODO: replace with your name / 替换为你的姓名
+    STUDENT_ID = "50494408"         # TODO: replace with your student ID / 替换为你的学号
+    GITHUB_USERNAME = "lain00511"  # TODO: replace with your GitHub username / 替换为GitHub用户名
 
     def __init__(self, game_env: GameEnv):
         self.game_env = game_env
